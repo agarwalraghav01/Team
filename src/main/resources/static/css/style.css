@@ -3,5 +3,11 @@ body {
 }
 
 .starter-template {
+    background-image:url("/images/img4.jpeg");
 
+    min-height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
 }
