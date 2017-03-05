@@ -1,10 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Hello World</title>
-</head>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="common/header :: common-header"></head>
+
 <body>
-<h1>Hello World</h1>
+
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Project name</a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#" th:text="#{navbar.home}"></a></li>
+                <li><a href="#about" th:text="#{navbar.about}"></a></li>
+                <li><a href="#contact" th:text="#{navbar.contact}"></a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</div>
+
+<div class="container">
+
+    <div class="starter-template">
+        <h1 th:text="#{bootstrap.h1}"></h1>
+    </div>
+
+    <!-- bosy scripts at the last so the page load faster -->
+    <div th:replace="common/header :: body-scrpit"></div>
+
+</div><!-- /.container -->
 </body>
 </html>
