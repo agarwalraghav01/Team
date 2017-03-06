@@ -5,15 +5,14 @@
 <body>
 
 <div th:replace="common/navbar :: common-navbar"></div>
+<div class="starter-template">
+    <h1 id="1" th:text="#{parallax.text}"></h1>
+    <h1 th:text="#{parallax.text2}"></h1>
+</div>
 
-<div class="container">
+<!-- bosy scripts at the last so the page load faster -->
+<div th:replace="common/header :: body-scrpit"></div>
 
-    <div class="starter-template"></div>
 
-
-    <!-- bosy scripts at the last so the page load faster -->
-    <div th:replace="common/header :: body-scrpit"></div>
-
-</div><!-- /.container -->
 </body>
 </html>
