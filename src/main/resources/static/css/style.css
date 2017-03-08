@@ -1,3 +1,6 @@
+body{
+    background-color: white;
+}
 .starter-template {
     background-image:url("/images/img2.jpeg");
     min-height: 675px;
@@ -11,5 +14,32 @@
     color: white;
     text-align: center;
 }
+.section2 .col-lg-4 > img {
+    width:120px;
+    height:120px;
+}
+.section2 .col-lg-4 {
+    padding-left: 140px;
+    padding-top: 50px;
+}
+.aboutParallax{
+    background-image: url("/images/img4.jpeg");
+    min-height: 700px;
+    padding-top: 30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+.aboutParallax > h1{
+    color: white;
+    text-align: center;
+}
+.about-section{
+    padding-left: 30px;
+}
+
+
+
 
 

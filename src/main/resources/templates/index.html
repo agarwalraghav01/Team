@@ -10,8 +10,32 @@
     <h1 th:text="#{parallax.text2}"></h1>
 </div>
 
+<div class="section2">
+    <div class="text-center">
+        <h1 th:text="#{index.part2}"></h1>
+    </div>
+
+    <div class="col-lg-4">
+        <img th:src="@{/images/browser-icon-chrome.png}"/>
+        <p>somrthing is cool</p>
+        <button class="btn btn-default">Learn More</button>
+    </div>
+
+    <div class="col-lg-4">
+        <img th:src="@{/images/browser-icon-chrome.png}"/>
+        <p>somrthing is cool</p>
+        <button class="btn btn-default">Learn More</button>
+    </div>
+
+    <div class="col-lg-4">
+        <img th:src="@{/images/browser-icon-chrome.png}"/>
+        <p>somrthing is cool</p>
+        <button class="btn btn-default">Learn More</button>
+    </div>
+</div>
+
 <!-- bosy scripts at the last so the page load faster -->
-<div th:replace="common/header :: body-scrpit"></div>
+<div th:replace="common/header :: body-script"></div>
 
 
 </body>

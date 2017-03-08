@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="common/header :: common-header"></head>
+
+<body>
+
+<div th:replace="common/navbar :: common-navbar"></div>
+<div class="aboutParallax">
+    <h1 th:text="#{about.parallax.text}"></h1>
+</div>
+<div class="about-section">
+    <div class="col-lg-6">
+
+        <hr class="featurette-divider"></hr>
+        <div class="featurette">
+            <img class="featurette-imgage pull-left"  th:src="@{/images/browser-icon-firefox.png}" />
+            <h1 class="featurette-heading">UI/UX development</h1>
+            <p class="lead">Football betting is a skirt. Microwave was an element of the game. Clinical Performance photography
+                before. Lorem ipsum lor sit am and conseetuer ecological environment. Pellenteqolor dignissimulvinar
+                ac lorem lobortis quis lobortis. Vestibuit but pain. Another con ermentum players. Mauris prosecutor.</p>
+        </div>
+    </div>
+    <div class="col-lg-6">
+        <div class="featurette">
+            <img class="featurette-imgage pull-left"  th:src="@{/images/browser-icon-firefox.png}" style="width: 150px; height: 150px;"/>
+            <h1 class="featurette-heading">UI/UX development</h1>
+            <p class="lead">Football betting is a skirt. Microwave was an element of the game. Clinical Performance photography
+                before. Lorem ipsum lor sit am and conseetuer ecological environment. Pellenteqolor dignissimulvinar
+                ac lorem lobortis quis lobortis. Vestibuit but pain. Another con ermentum players. Mauris prosecutor.</p>
+        </div>
+        <hr class="featurette-divider"></hr>
+    </div>
+</div>
+<!-- bosy scripts at the last so the page load faster -->
+<div th:replace="common/header :: body-script"></div>
+
+
+</body>
+</html>
