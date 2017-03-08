@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="common/header :: common-header"></head>
+
+<body>
+
+<div th:replace="common/navbar :: common-navbar"></div>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <div class="well">
+                <div class="text-center">
+                    <h1 th:text="#{feedback.tag}"></h1>
+                    <form id="ContactForm"
+                          class="text-left"
+                          th:action="@{/contact/}"
+                          th:object="${feedback}"
+                          method="post">
+                        <div class="form-group">
+                            <label for="email" th:text="#{feedbaack.email}"></label>
+                            <input id="email" class="form-control" th:field="*{email}" />
+                        </div>
+                        <div class="form-group">
+                            <label for="firstName" th:text="#{feedback.firstName}"></label>
+                            <input id="firstName" class="form-control" th:field="*{firstName}" />
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName" th:text="#{feedback.lastName}"></label>
+                            <input id="lastName" class="form-control" th:field="*{lastName}" />
+                        </div>
+                        <div class="form-group">
+                            <label for="feedback" th:text="#{feedback.feedback}"></label>
+                            <textarea class="form-control" id="feedback" th:field="*{feedback}"></textarea>
+                        </div>
+                        <div class="from-group">
+                            <button class="btn btn-default btn-primary" th:text="#{feedback.submit}"></button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<!-- bosy scripts at the last so the page load faster -->
+<div th:replace="common/header :: body-script"></div>
+
+
+</body>
+</html>
