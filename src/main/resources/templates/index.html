@@ -11,29 +11,55 @@
 </div>
 
 <div class="section2">
-    <div class="text-center">
-        <h1 th:text="#{index.part2}"></h1>
+    <h1 th:text="#{index.part2}"></h1>
+    <p>&mdash;</p>
+    <div class="col-lg-4">
+        <img th:src="@{/images/browser-icon-chrome.png}"/>
+        <p>UX Design</p>
+        <p class="lead">
+            Crafting unique experiences by enhancing usability, accessibility and pleasure of the user interaction with the product.
+        </p>
+        <button class="btn btn-default">Learn More</button>
+
     </div>
 
     <div class="col-lg-4">
         <img th:src="@{/images/browser-icon-chrome.png}"/>
-        <p>somrthing is cool</p>
+        <p>Mobile Apps</p>
+        <p class="lead">
+            Providing users with the extensive experience of working on mobile projects on the go
+        </p>
         <button class="btn btn-default">Learn More</button>
     </div>
 
     <div class="col-lg-4">
         <img th:src="@{/images/browser-icon-chrome.png}"/>
-        <p>somrthing is cool</p>
-        <button class="btn btn-default">Learn More</button>
-    </div>
-
-    <div class="col-lg-4">
-        <img th:src="@{/images/browser-icon-chrome.png}"/>
-        <p>somrthing is cool</p>
+        <p>Interface
+            Design</p>
+        <p class="lead">Designing user-friendly and easy-to-follow interfaces.
+        </p>
         <button class="btn btn-default">Learn More</button>
     </div>
 </div>
+<div class="section3">
+    <!-- the parallax2 of the index  page -->
+</div>
 
+<div class="section4">
+    <h1 th:text="#{section4.index.heading}"></h1>
+    <p>&mdash;</p>
+    <p class="lead" th:text="#{section4.tagline}"></p>
+    <div class="section4-client-list">
+        <ul>
+            <li><img th:src="@{/images/browser-icon-safari.png}" /></li>
+            <li><img th:src="@{/images/browser-icon-safari.png}" /></li>
+            <li><img th:src="@{/images/browser-icon-safari.png}" /></li>
+            <li><img th:src="@{/images/browser-icon-safari.png}" /></li>
+        </ul>
+    </div>
+</div>
+
+<div th:replace="common/footer :: common-footer"></div>
 <!-- bosy scripts at the last so the page load faster -->
 <div th:replace="common/header :: body-script"></div>
 
